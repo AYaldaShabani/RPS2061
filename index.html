@@ -7,11 +7,34 @@
     <!-- styles -->
     <link rel="stylesheet" href="./style/style.css" />
     <!-- insert bootstrap link -->
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
     <!-- title -->
     <title>Rock Paper Scissor</title>
   </head>
   <body>
+    <div id="gameScreen" style="border: 1px solid #ccc; width:912px ; 
+          height: 816px;">
+          <div id="gmaeResult" class="w"></div> 
+          <div id="gmaeScore"></div> 
+          <div id="paly">
+            <div id="paper">
+              <div class="image"></div>
+              <button></button>
+            </div>
+            <div id="scissors">
+              <div class="image"></div>
+              <button></button>
+            </div>
+            <div id="rock">
+              <div class="image"></div>
+              <button></button>
+            </div>
+
+            <div id="restart">PALY AGAIN</div>
+          </div>
+        </div>
     <!-- scripts -->
     <script src="./script/main.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
   </body>
 </html>
