@@ -11,27 +11,29 @@
     <!-- title -->
     <title>Rock Paper Scissor</title>
   </head>
-  <body>
-    <div id="gameScreen" style="border: 1px solid #ccc; width:912px ; 
-          height: 816px;">
-          <div id="gmaeResult" class="w"></div> 
-          <div id="gmaeScore"></div> 
-          <div id="paly">
-            <div id="paper">
-              <div class="image"></div>
-              <button></button>
+  <body >
+    <div id="gameScreen" class="bg-back" style="border: 1px solid #ccc; width:912px ;  height: 816px; margin: 0 auto;">
+          <div id="gmaeResult" style=" height:10%; text-align: center;" class="w-100 text-light" >game result : </div> 
+          <div id="gmaeScore" style="text-align: center ;height:10%;" class="w-100 text-light">you 0 : 0 Ai</div>
+          <div id="computerChoice" style="text-align: center;height:10%;" class="w-100 text-light">computer choose : </div>
+          <div id="paly" style=" height: 40%;" class="w-100 d-flex justify-content-around">
+            <div id="paper_div" class="w-25 h-100" >
+              <div class="image w-100 h-75" style=" background-image:url('./img/paper.png');"></div>
+              <input type="radio" name="play" id="paper" style="margin-left: 50%; margin-top: 20px;">
             </div>
-            <div id="scissors">
-              <div class="image"></div>
-              <button></button>
+            <div id="scissors_div" class="w-25 h-100" >
+              <div class="image w-100 h-75" style="background-image: url(./img/scissors.png);" ></div>
+              <input type="radio" name="play" id="scissors" style="margin-left: 50%; margin-top: 20px;">
             </div>
-            <div id="rock">
-              <div class="image"></div>
-              <button></button>
+            <div id="rock_div" class="w-25 h-100">
+              <div class="image w-100 h-75" style="background-image: url(./img/rock.png);" ></div>
+              <input type="radio" name="play" id="rock" style="margin-left: 50%; margin-top: 20px;">
             </div>
-
-            <div id="restart">PALY AGAIN</div>
           </div>
+          <div style="margin-left: 44%;">
+            <input class="btn btn-light" value="Play Game" type="submit" id="player" >
+          </div>
+          
         </div>
     <!-- scripts -->
     <script src="./script/main.js"></script>
